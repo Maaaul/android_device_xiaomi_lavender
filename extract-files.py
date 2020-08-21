@@ -44,6 +44,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('__aeabi_memcpy')
         .clear_symbol_version('__aeabi_memset')
         .clear_symbol_version('__gnu_Unwind_Find_exidx'),
+    'vendor/lib/libmmcamera_imglib.so': blob_fixup()
+        .replace_needed('libmmcamera_mg_facepp_lib.so', 'libmmcamera_mg_faceppshim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

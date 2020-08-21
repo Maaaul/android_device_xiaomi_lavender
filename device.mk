@@ -36,7 +36,8 @@ TARGET_SCREEN_WIDTH := 1080
 # Camera
 PRODUCT_PACKAGES += \
     camera.sdm660 \
-    libMegviiFacepp-0.5.2
+    libMegviiFacepp-0.5.2 \
+    libmmcamera_mg_faceppshim
 
 # Consumerir
 BOARD_HAVE_IR := true
