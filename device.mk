@@ -107,3 +107,7 @@ PRODUCT_MODEL := Redmi Note 7 (AOSP)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
+# Customization apps for Vanilla builds
+PRODUCT_PACKAGES += \
+    ThemePicker \
+    WallpaperPicker2
