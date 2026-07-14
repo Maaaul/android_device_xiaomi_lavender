@@ -23,7 +23,10 @@ TARGET_TS_MAKEUP := true
 TARGET_USES_QTI_CAMERA_DEVICE := true
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 USE_DEVICE_SPECIFIC_CAMERA := true
-$(call project-set-path,qcom-camera,$(DEVICE_PATH)/camera)
+SOONG_CONFIG_NAMESPACES += qcomcamera
+SOONG_CONFIG_qcomcamera += target_device
+SOONG_CONFIG_qcomcamera_target_device := lavender
+$(call project-set-path,qcom-camera,hardware/qcom-caf/sdm660/camera)
 
 # Device Path
 DEVICE_PATH := device/xiaomi/lavender
