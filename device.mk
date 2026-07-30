@@ -39,6 +39,9 @@ PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
     libmmcamera_mg_faceppshim
 
+# Torch Control
+BOARD_HAVE_TORCH := true
+
 # Consumerir
 BOARD_HAVE_IR := true
 
