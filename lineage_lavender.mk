@@ -42,3 +42,8 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
 
 TARGET_VENDOR_PRODUCT_NAME := lavender
+
+WITH_GMS := false
+TARGET_ENABLE_BLUR := true
+
+-include vendor/evolution-priv/keys/keys.mk
