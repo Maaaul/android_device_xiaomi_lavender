@@ -30,8 +30,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Build Description
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="lavender-user 10 QKQ1.190910.002 V12.5.3.0.QFGCNXM release-keys" \
-    BuildFingerprint=xiaomi/lavender/lavender:10/QKQ1.190910.002/V12.5.3.0.QFGCNXM:user/release-keys \
     DeviceProduct=lavender
+
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := xiaomi/lavender/lavender:10/QKQ1.190910.002/V12.5.3.0.QFGCNXM:user/release-keys
 
 # Device identifier
 PRODUCT_NAME := lineage_lavender
@@ -45,5 +47,7 @@ TARGET_VENDOR_PRODUCT_NAME := lavender
 
 WITH_GMS := false
 TARGET_ENABLE_BLUR := true
+TARGET_ENABLE_FP_OVERRIDE := false
+PERF_ANIM_OVERRIDE := true
 
 -include vendor/evolution-priv/keys/keys.mk
