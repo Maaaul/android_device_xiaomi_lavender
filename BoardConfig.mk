@@ -50,3 +50,5 @@ BOARD_SUPER_PARTITION_VENDOR_DEVICE_SIZE := 2147483648
 BOARD_SUPER_PARTITION_SIZE := $(shell expr $(BOARD_SUPER_PARTITION_SYSTEM_DEVICE_SIZE) + $(BOARD_SUPER_PARTITION_VENDOR_DEVICE_SIZE) + $(BOARD_SUPER_PARTITION_CUST_DEVICE_SIZE))
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := $(shell expr $(BOARD_SUPER_PARTITION_SIZE) - 4194304 )
 
+# Enable restore surface generation after reconnect
+$(call soong_config_set_bool,stagefright,target_restore_surface_generation_after_reconnect,true)
