@@ -29,11 +29,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Build Description
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="lavender-user 10 QKQ1.190910.002 V12.5.3.0.QFGCNXM release-keys" \
+    BuildDesc="lavender-user 10 QKQ1.190910.002 V12.5.3.0.QFGMIXM release-keys" \
     DeviceProduct=lavender
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := xiaomi/lavender/lavender:10/QKQ1.190910.002/V12.5.3.0.QFGCNXM:user/release-keys
+BUILD_FINGERPRINT := xiaomi/lavender/lavender:10/QKQ1.190910.002/V12.5.3.0.QFGMIXM:user/release-keys
 
 # Device identifier
 PRODUCT_NAME := lineage_lavender
